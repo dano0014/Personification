@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const manageBtn = card.querySelector('.manage-button');
     manageBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      localStorage.setItem("presentChild", JSON.stringify(child));
+      sessionStorage.setItem("presentChild", JSON.stringify(child));
       window.location.href = 'manage-trust.html';
     });
 
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function openModal(activityIndex) {
-    const activities = JSON.parse(localStorage.getItem("activities")) || [];
+    const activities = JSON.parse(sessionStorage.getItem("activities")) || [];
     const activity = activities[activityIndex];
     if (!activity) return;
   
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function updateActivityStatus(status) {
-    const activities = JSON.parse(localStorage.getItem("activities")) || [];
+    const activities = JSON.parse(sessionStorage.getItem("activities")) || [];
     if (currentActivityId === null || !activities[currentActivityId]) return;
   
     // Update status and remove from activities list
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     activities.splice(currentActivityId, 1);
   
     // Save back
-    localStorage.setItem("activities", JSON.stringify(activities));
+    sessionStorage.setItem("activities", JSON.stringify(activities));
   
     modal.classList.add('hidden');
     currentActivityId = null;
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // After rendering recent activity, add click listeners
   function renderRecentActivity(childObjs) {
-    const activities = JSON.parse(localStorage.getItem("activities")) || [];
+    const activities = JSON.parse(sessionStorage.getItem("activities")) || [];
     const childIds = childObjs.map(c => c.id);
     const filtered = activities.filter(act => childIds.includes(act.childId));
   
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Updated to receive actual child objects
 function renderRecentActivity(childObjs) {
-  const activities = JSON.parse(localStorage.getItem("activities")) || [];
+  const activities = JSON.parse(sessionStorage.getItem("activities")) || [];
   const childIds = childObjs.map(c => c.id);
   const filtered = activities.filter(act => childIds.includes(act.childId));
 

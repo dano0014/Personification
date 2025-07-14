@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     const childData = {
+      id: crypto.randomUUID(),
       firstName: document.getElementById("firstName").value.trim(),
       lastName: document.getElementById("lastName").value.trim(),
       age: document.getElementById("age").value.trim(),

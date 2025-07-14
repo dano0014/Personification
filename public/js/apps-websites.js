@@ -68,15 +68,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       .map(([appId]) => appId);
 
     presentChild.allowedApps = allowedApps;
-    localStorage.setItem('presentChild', JSON.stringify(presentChild));
+    sessionStorage.setItem('presentChild', JSON.stringify(presentChild));
 
     // Also update the parentAccount children list
-    const parentAccount = JSON.parse(localStorage.getItem('parentAccount'));
+    const parentAccount = JSON.parse(sessionStorage.getItem('parentAccount'));
     if (parentAccount && Array.isArray(parentAccount.children)) {
       parentAccount.children = parentAccount.children.map(child =>
         child.id === presentChild.id ? presentChild : child
       );
-      localStorage.setItem('parentAccount', JSON.stringify(parentAccount));
+      sessionStorage.setItem('parentAccount', JSON.stringify(parentAccount));
     }
 
     window.location.href = 'manage-trust.html';

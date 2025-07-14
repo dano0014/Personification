@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
       checked: input.checked
     }));
 
-    const child = JSON.parse(localStorage.getItem("presentChild"));
-    const activities = JSON.parse(localStorage.getItem("activities")) || [];
+    const child = JSON.parse(sessionStorage.getItem("presentChild"));
+    const activities = JSON.parse(sessionStorage.getItem("activities")) || [];
 
     const newRequest = {
       type: "app-request",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     activities.push(newRequest);
-    localStorage.setItem("activities", JSON.stringify(activities));
+    sessionStorage.setItem("activities", JSON.stringify(activities));
 
     alert("Your request has been submitted!");
     appNameInput.value = "";

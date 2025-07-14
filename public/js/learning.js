@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const container = document.getElementById("playlist-container");
-  const child = JSON.parse(localStorage.getItem("presentChild"));
+  const child = JSON.parse(sessionStorage.getItem("presentChild"));
   const playlists = await fetch("data/playlists.json").then(res => res.json());
 
   if (!child || !Array.isArray(child.playlists)) {

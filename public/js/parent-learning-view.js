@@ -1,8 +1,8 @@
 const TAGS = ["Safety", "Privacy", "Citizenship", "Wellbeing"];
 const tagRow = document.getElementById("tagRow");
 const playlistContainer = document.getElementById("playlistContainer");
-const user = JSON.parse(localStorage.getItem("currentUser"));
-const child = JSON.parse(localStorage.getItem("presentChild"));
+const user = JSON.parse(sessionStorage.getItem("currentUser"));
+const child = JSON.parse(sessionStorage.getItem("presentChild"));
 
 let playlists = [];
 let activeTag = null;
@@ -99,8 +99,8 @@ function renderPlaylists(filteredTag = null) {
         }
       }
 
-      localStorage.setItem("presentChild", JSON.stringify(child));
-      localStorage.setItem("currentUser", JSON.stringify(user));
+      sessionStorage.setItem("presentChild", JSON.stringify(child));
+      sessionStorage.setItem("currentUser", JSON.stringify(user));
 
       renderPlaylists(filteredTag); // Re-render to remove added playlist from view
     });

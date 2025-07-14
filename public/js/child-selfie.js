@@ -43,7 +43,7 @@ document.getElementById("next-button").addEventListener("click", async () => {
     return;
   }
 
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  const currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
   if (!currentUser || currentUser.role !== "Parent") {
     alert("Only a logged-in parent can add children.");
     return;

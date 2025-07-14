@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Fetch child and level info
   const user = getCurrentUser();
-  const presentChild = JSON.parse(localStorage.getItem("presentChild")) || { name: "Unnamed", trustLevel: 1 };
+  const presentChild = JSON.parse(sessionStorage.getItem("presentChild")) || { name: "Unnamed", trustLevel: 1 };
   const levels = await fetch("data/trust-levels.json").then(res => res.json());
 
   let selectedLevel = null;
@@ -63,21 +63,29 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Handle confirm button
   confirmButton.addEventListener("click", () => {
     if (selectedLevel && selectedLevel !== presentChild.trustLevel) {
-      // Update the presentChild trust level
+      // Update trust level
       presentChild.trustLevel = selectedLevel;
-      localStorage.setItem("presentChild", JSON.stringify(presentChild));
-
+      sessionStorage.setItem("presentChild", JSON.stringify(presentChild));
+    
       if (user && user.role === "Parent") {
-        user.children = user.children.map(child =>
-          child.id === presentChild.id ? presentChild : child
-        );
-        localStorage.setItem("currentUser", JSON.stringify(user));
+        const childIndex = user.children.findIndex(child => child.id === presentChild.id);
+      
+        if (childIndex !== -1) {
+          // Child found — update
+          user.children[childIndex] = presentChild;
+        } else {
+          // Child not found — add
+          user.children.push(presentChild);
+        }
+      
+        sessionStorage.setItem("currentUser", JSON.stringify(user));
       }
-
+    
       // Redirect
       window.location.href = "../dashboard.html";
     }
   });
+
 
 
   document.getElementById("back-button").addEventListener("click", () => {

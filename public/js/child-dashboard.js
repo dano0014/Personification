@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  const user = JSON.parse(localStorage.getItem("currentUser"));
-  const child = JSON.parse(localStorage.getItem("presentChild"));
+  const user = JSON.parse(sessionStorage.getItem("currentUser"));
+  const child = JSON.parse(sessionStorage.getItem("presentChild"));
   const playlists = await fetch("data/playlists.json").then(res => res.json());
   const levels = await fetch("data/trust-levels.json").then(res => res.json());
   const appsGrid = document.getElementById("apps-grid");

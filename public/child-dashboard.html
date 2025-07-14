@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/child-dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-header">
+        <div class="header-left">
+          <div class="icon-box"></div>
+          <a href="index.html" class="title-text">Personification</a>
+        </div>
+        <div class="header-right">
+          <div class="nav-link">Home</div>
+          <div class="nav-link">Devices</div>
+          <div class="nav-link">Family</div>
+          <div class="nav-link">Settings</div>
+          <img src="https://placehold.co/40x40" alt="User Avatar" class="avatar"/>
+        </div>
+      </div>
+    </div>
+    <div class="auth-wrapper">
+      <div class="auth-card">
+        <div class="auth-header">
+          <h1 id="child-welcome" class="auth-title">Welcome back!</h1>
+        </div>
+
+        <div class="button-section">
+          <button id="learning" class="primary-button">My Learning Journey</button>
+        </div>
+
+        <div class="section-header">
+          <h2 class="level-title">Allowed Apps</h2>
+        </div>
+
+        <div id="apps-grid" class="apps-grid">
+          <!-- Apps inserted here -->
+        </div>
+
+        <div class="button-section">
+          <button id="request-app" class="primary-button">Request New App</button>
+        </div>
+
+        <div class="progress-section">
+          <div class="progress-label">Weekly Progress</div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <div class="progress-text">3/5 Modules Completed. Keep up the great work!</div>
+        </div>
+
+        <div id="trust-banner" class="level-banner">
+          <!-- Trust level info inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/child-dashboard.js"></script>
+  </body>
+</html>

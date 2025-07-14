@@ -1,0 +1,79 @@
+/* request-app.css */
+
+/* Section Headings */
+.trust-content-h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: 'Lexend', sans-serif;
+  color: #0F1417;
+  line-height: 24px;
+}
+
+/* Override for transparent card */
+.auth-card.transparent {
+  background: transparent;
+  padding: 0;
+}
+
+/* Compact radio label text */
+.level-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0D141C;
+}
+
+/* Container for level options */
+.level-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #F7FAFC;
+  border: 1px solid #CFDBE8;
+  cursor: pointer;
+  transition: outline-offset 0.3s ease;
+}
+
+.level-option:hover {
+  outline: 2px solid #4F8CC4;
+  outline-offset: 2px;
+}
+
+/* Optional radio input visuals */
+.radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #D4DBE3;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.radio::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.level-option.selected .radio {
+  border-color: #4F8CC4;
+}
+
+.level-option.selected .radio::after {
+  background-color: #4F8CC4;
+}
+
+/* Custom Navbar Branding */
+.nav-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #141414;
+}

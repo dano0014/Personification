@@ -1,0 +1,164 @@
+[
+  {
+    "id": "playlist1",
+    "title": "Online Safety Basics",
+    "creator": "Research Group",
+    "tag": "Safety",
+    "recommendedTrustLevel": 1,
+    "videos": [
+      "video1.mp4",
+      "video2.mp4"
+    ]
+  },
+  {
+    "id": "playlist2",
+    "title": "Recognizing Safe Websites",
+    "creator": "Research Group",
+    "tag": "Privacy",
+    "recommendedTrustLevel": 1,
+    "videos": [
+      "video3.mp4",
+      "video4.mp4"
+    ]
+  },
+  {
+    "id": "playlist3",
+    "title": "Creating A Secure Password",
+    "creator": "Research Group",
+    "tag": "Privacy",
+    "recommendedTrustLevel": 1,
+    "videos": [
+      "video5.mp4",
+      "video6.mp4",
+      "video7.mp4"
+    ]
+  },
+  {
+    "id": "playlist4",
+    "title": "Digital Citizenship Essentials",
+    "creator": "Education Team",
+    "tag": "Citizenship",
+    "recommendedTrustLevel": 2,
+    "videos": [
+      "video8.mp4",
+      "video9.mp4"
+    ]
+  },
+  {
+    "id": "playlist5",
+    "title": "Understanding Social Media Privacy",
+    "creator": "Privacy Experts",
+    "tag": "Privacy",
+    "recommendedTrustLevel": 2,
+    "videos": [
+      "video10.mp4",
+      "video11.mp4"
+    ]
+  },
+  {
+    "id": "playlist6",
+    "title": "Spotting Online Scams",
+    "creator": "Security Team",
+    "tag": "Safety",
+    "recommendedTrustLevel": 3,
+    "videos": [
+      "video12.mp4"
+    ]
+  },
+  {
+    "id": "playlist7",
+    "title": "Cyberbullying Prevention",
+    "creator": "Community Outreach",
+    "tag": "Wellbeing",
+    "recommendedTrustLevel": 2,
+    "videos": [
+      "video13.mp4",
+      "video14.mp4"
+    ]
+  },
+  {
+    "id": "playlist8",
+    "title": "Safe Online Gaming",
+    "creator": "Gaming Network",
+    "tag": "Safety",
+    "recommendedTrustLevel": 2,
+    "videos": [
+      "video15.mp4",
+      "video16.mp4"
+    ]
+  },
+  {
+    "id": "playlist9",
+    "title": "Protecting Personal Information",
+    "creator": "Privacy Experts",
+    "tag": "Privacy",
+    "recommendedTrustLevel": 3,
+    "videos": [
+      "video19.mp4"
+    ]
+  },
+  {
+    "id": "playlist10",
+    "title": "Understanding Digital Footprints",
+    "creator": "Research Group",
+    "tag": "Citizenship",
+    "recommendedTrustLevel": 3,
+    "videos": [
+      "video20.mp4",
+      "video21.mp4"
+    ]
+  },
+  {
+    "id": "playlist11",
+    "title": "Building Positive Online Relationships",
+    "creator": "Community Outreach",
+    "tag": "Wellbeing",
+    "recommendedTrustLevel": 3,
+    "videos": [
+      "video22.mp4",
+      "video23.mp4"
+    ]
+  },
+  {
+    "id": "playlist12",
+    "title": "Managing Screen Time",
+    "creator": "Health Experts",
+    "tag": "Wellbeing",
+    "recommendedTrustLevel": 1,
+    "videos": [
+      "video24.mp4"
+    ]
+  },
+  {
+    "id": "playlist13",
+    "title": "Responsible Social Media Use",
+    "creator": "Education Team",
+    "tag": "Citizenship",
+    "recommendedTrustLevel": 2,
+    "videos": [
+      "video25.mp4",
+      "video26.mp4"
+    ]
+  },
+  {
+    "id": "playlist14",
+    "title": "Online Etiquette and Manners",
+    "creator": "Community Outreach",
+    "tag": "Citizenship",
+    "recommendedTrustLevel": 1,
+    "videos": [
+      "video32.mp4"
+    ]
+  },
+  {
+    "id": "playlist15",
+    "title": "Safe Online Shopping",
+    "creator": "Security Team",
+    "tag": "Safety",
+    "recommendedTrustLevel": 3,
+    "videos": [
+      "video33.mp4",
+      "video34.mp4"
+    ]
+  }
+]

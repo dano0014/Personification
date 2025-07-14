@@ -1,0 +1,148 @@
+/* Page Wrapper */
+.parent-learning-wrapper {
+  min-height: 800px;
+  background: #F7FAFC;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Inner Container */
+.parent-learning-container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Content Box */
+.parent-learning-content {
+  flex: 1 1 0;
+  width: 100%;
+  max-width: 960px;
+  padding: 20px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0D141C;
+}
+
+/* Subsection Title */
+.subsection-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0D141C;
+  margin-top: 12px;
+}
+
+/* Playlist Card Grid */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+/* Individual Card */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 376px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.card img {
+  width: 100%;
+  height: 211px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0D141C;
+  padding: 0 12px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #4A709C;
+  padding: 0 12px 12px;
+}
+
+/* Tag Section */
+.tag-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+.tag {
+  background: #E8EDF5;
+  color: #0D141C;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer Item */
+.video-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 16px;
+  background: #F7FAFC;
+  border-top: 1px solid #CFDBE8;
+}
+
+.video-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0D141C;
+}
+
+.video-meta {
+  font-size: 14px;
+  color: #4A709C;
+  font-weight: 400;
+}
+
+.add-button {
+  background: #E8EDF5;
+  border-radius: 16px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0D141C;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-button:hover {
+  background: #D8E0EC;
+}

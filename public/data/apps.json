@@ -1,0 +1,34 @@
+[
+  {
+    "name": "YouTube",
+    "icon": "https://placehold.co/144x144?text=YouTube"
+  },
+  {
+    "name": "TikTok",
+    "icon": "https://placehold.co/144x144?text=TikTok"
+  },
+  {
+    "name": "Google",
+    "icon": "https://placehold.co/144x144?text=Google"
+  },
+  {
+    "name": "Minecraft",
+    "icon": "https://placehold.co/144x144?text=Minecraft"
+  },
+  {
+    "name": "Discord",
+    "icon": "https://placehold.co/144x144?text=Discord"
+  },
+  {
+    "name": "Instagram",
+    "icon": "https://placehold.co/144x144?text=Instagram"
+  },
+  {
+    "name": "Zoom",
+    "icon": "https://placehold.co/144x144?text=Zoom"
+  },
+  {
+    "name": "Facebook",
+    "icon": "https://placehold.co/144x144?text=Facebook"
+  }
+]

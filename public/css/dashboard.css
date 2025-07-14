@@ -1,0 +1,323 @@
+/* Container for full dashboard */
+.dashboard-container {
+  width: 1280px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto; /* center horizontally */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #141414;
+}
+
+/* Wrapper with light gray background and vertical layout */
+.dashboard-wrapper {
+  width: 100%;
+  min-height: 800px;
+  background: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* Header bar */
+.dashboard-header {
+  width: 100%;
+  background: #37E8FF;
+  border-bottom: 1px solid #E5E8EB;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Left side of header with icon and title */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Icon box in header */
+.icon-box {
+  width: 25.5px;
+  height: 20px;
+  border: 4px solid #1E1E1E; /* outline from your example */
+  outline-offset: -2px;
+  position: relative;
+}
+
+/* Title text in header */
+.title-text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 23px;
+  color: #141414;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Right side navigation links */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Individual nav link styling */
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #141414;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* User avatar */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Main content area */
+.dashboard-main {
+  width: 100%;
+  padding: 20px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Section title */
+.section-title {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #0F1417;
+  margin-bottom: 16px;
+}
+
+/* Cards container */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+/* Individual card */
+.dashboard-card {
+  width: 320px; /* 288 + image 320 = roughly your example */
+  display: flex;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Info section inside card */
+.card-info {
+  flex: 1 1 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Role text (e.g. Child) */
+.card-role {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5C738A;
+}
+
+/* Name text */
+.card-name {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0F1417;
+}
+
+/* Trust Level */
+.card-trust {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5C738A;
+}
+
+/* Manage button */
+.manage-button {
+  width: fit-content;
+  padding: 8px 16px;
+  background: #EBEDF2;
+  border-radius: 16px;
+  border: none;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0F1417;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.manage-button:hover {
+  background: #d4d7db;
+}
+
+/* Card image */
+.card-image {
+  width: 320px;
+  height: 171px;
+  object-fit: cover;
+  border-radius: 0 12px 12px 0;
+  flex-shrink: 0;
+}
+
+.add-child-card {
+  cursor: pointer;
+  border: 2px dashed #ccc;
+  transition: all 0.2s ease;
+}
+
+.add-child-card:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.02);
+}
+
+.recent-activity-section {
+  margin-top: 40px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-subtitle {
+  font-family: 'Lexend', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0F1417;
+}
+
+.recent-activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Lexend', sans-serif;
+}
+
+.recent-activity-table th,
+.recent-activity-table td {
+  border: 1px solid #D4DBE3;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #0F1417;
+}
+
+.recent-activity-table th {
+  background-color: #E6F0FF;
+  font-weight: 700;
+}
+
+.recent-activity-table tbody tr:nth-child(even) {
+  background-color: #FAFAFA;
+}
+
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.activity-table th,
+.activity-table td {
+  padding: 12px;
+  border: 1px solid #D4DBE3;
+  font-size: 14px;
+  text-align: left;
+}
+
+.activity-table th {
+  background-color: #F0F4F8;
+  font-weight: 700;
+  color: #0F1417;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 20, 23, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Lexend', sans-serif;
+  color: #0F1417;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.modal-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.primary-button {
+  background-color: #4F8CC4;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.secondary-button {
+  background: #EDEDED;
+  color: #141414;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+}

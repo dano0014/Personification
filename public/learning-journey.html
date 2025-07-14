@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning Journey</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/learning.css" />
+</head>
+<body>
+  <div class="container learning-journey">
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-left">
+        <div class="icon-placeholder" aria-hidden="true"></div>
+        <a href="index.html" class="title-text">Personification</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-button" aria-label="Notifications">
+          <div class="button-icon"></div>
+        </button>
+        <img class="profile-pic" src="https://placehold.co/40x40" alt="User Profile" />
+      </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="trust-content" aria-labelledby="playlist-title">
+      <header>
+        <h1 id="playlist-title">Learning Journey</h1>
+        <p class="curated-by">Curated by Your Parent</p>
+      </header>
+
+      <div id="playlist-container">
+        <!-- Playlist items will be populated here by JS -->
+      </div>
+    </section>
+  </div>
+
+  <script src="js/learning.js" type="module"></script>
+</body>
+</html>

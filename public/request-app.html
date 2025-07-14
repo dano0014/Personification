@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request New App</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/request-app.css" />
+</head>
+<body>
+  <div class="container request-container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-left brand">
+        <a href="index.html" class="title-text">Personification</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-button icon-button">
+          <div class="placeholder-icon"></div>
+        </div>
+        <img src="https://placehold.co/40x40" alt="User avatar" class="avatar" />
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="auth-wrapper">
+      <section class="auth-card no-bg">
+        <h1 class="auth-title">What do you want to do?</h1>
+
+        <div class="input-group">
+          <label for="app-name">App name</label>
+          <input id="app-name" name="app-name" type="text" class="text-input" placeholder="Enter the app name" />
+        </div>
+
+        <h2 class="section-subtitle">Why do you want to use this app?</h2>
+
+        <div class="input-group wide">
+          <div class="level-option">
+            <div class="radio"></div>
+            <div class="level-text">Play games</div>
+          </div>
+
+          <div class="level-option">
+            <div class="radio"></div>
+            <div class="level-text">Watch videos</div>
+          </div>
+
+          <div class="level-option">
+            <div class="radio"></div>
+            <div class="level-text">Listen to music</div>
+          </div>
+
+          <div class="level-option">
+            <div class="radio"></div>
+            <div class="level-text">Connect with friends</div>
+          </div>
+
+          <div class="level-option">
+            <div class="radio"></div>
+            <div class="level-text">Shop online</div>
+          </div>
+
+          <div class="level-option">
+            <div class="radio"></div>
+            <div class="level-text">Read books</div>
+          </div>
+        </div>
+
+        <h2 class="section-subtitle margin-top">Safety checklist</h2>
+
+        <div class="checklist">
+          <label class="level-option checkbox">
+            <input type="checkbox" />
+            I will only use this app when my parent or guardian is nearby.
+          </label>
+
+          <label class="level-option checkbox">
+            <input type="checkbox" />
+            I will not share any personal information on this app.
+          </label>
+
+          <label class="level-option checkbox">
+            <input type="checkbox" />
+            I will not click on any links or ads within the app.
+          </label>
+        </div>
+
+        <button class="primary-button submit-button">Ask My Parent to Review My Plan</button>
+      </section>
+    </main>
+  </div>
+<script src="js/request-app.js" defer></script>
+</body>
+</html>

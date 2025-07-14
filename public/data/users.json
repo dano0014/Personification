@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "password": "password",
+    "role": "Parent",
+    "selfie": "selfies/jane@example.com.png",
+    "identification": {
+      "birthCertificate": null,
+      "passport": "ids/jane_passport.png",
+      "idCard": null
+    },
+    "children": [
+      {
+        "id": 1,
+        "name": "Ethan",
+        "email": "ethan@example.com",
+        "password": "childpass1",
+        "role": "Child",
+        "selfie": "selfies/ethan@example.com.png",
+        "identification": {
+          "birthCertificate": "ids/ethan_birth.png",
+          "passport": null,
+          "idCard": null
+        },
+        "trustLevel": 2,
+        "allowedApps": [
+          "YouTube Kids",
+          "Khan Academy"
+        ],
+        "playlistIds": ["playlist1", "playlist2"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manage Trust Level</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="content-container">
+    <div class="navbar">
+      <div class="nav-left">
+        <div class="logo-icon">
+          <!-- Replace this with an actual icon or image if needed -->
+          <div style="width: 25.5px; height: 20px; outline: 4px #1E1E1E solid; outline-offset: -2px;"></div>
+        </div>
+        <a href="index.html" class="site-title">Personification</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="support.html" class="nav-link">Support</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-content">
+      <h1 id="child-name-header">Manage Child's Trust Level</h1>
+
+      <h2>Current Level</h2>
+      <div id="current-level-container"></div> <!-- Inject current level here -->
+
+      <h2>Change Level To:</h2>
+      <div id="level-options-container"></div> <!-- Inject level options here -->
+
+      <div class="button-row">
+        <button id="back-button" class="primary-button">Back to Dashboard</button>
+        <button class="primary-button" id="confirm-button" disabled>Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/manage-trust.js" type="module"></script>
+</body>
+</html>

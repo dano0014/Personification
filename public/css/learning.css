@@ -1,0 +1,213 @@
+/* Learning Journey Page */
+
+.learning-journey {
+  max-width: 1280px;
+  margin: 40px auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  padding: 12px 40px;
+  background: #37E8FF;
+  border-bottom: 1px solid #E5E8EB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-placeholder {
+  width: 34px;
+  height: 40px;
+  outline: 4px solid #1E1E1E;
+  outline-offset: -2px;
+  position: relative;
+}
+
+.nav-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 23px;
+  color: #141414;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-button {
+  width: 40px;
+  height: 40px;
+  background: #EDEDED;
+  border-radius: 12px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+  background: #737373;
+}
+
+/* Profile picture in navbar */
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Content */
+.trust-content {
+  padding: 20px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 735px;
+  background: #F7FAFC;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.trust-content header h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #0D141C;
+  margin-bottom: 8px;
+}
+
+.curated-by {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4A709C;
+}
+
+/* Playlist item container */
+.playlist-item {
+  background: #F7FAFC;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 8px;
+  align-items: flex-start;
+  gap: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.playlist-item:hover {
+  background-color: #E6F0FF;
+}
+
+/* Icon for each playlist item */
+.playlist-icon {
+  width: 48px;
+  height: 48px;
+  background: #E8EDF5;
+  border-radius: 8px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.playlist-icon > div {
+  width: 24px;
+  height: 24px;
+  background: #0D141C;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border-radius: 2px;
+}
+
+/* Info text */
+.playlist-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.playlist-info h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0D141C;
+  line-height: 24px;
+  margin: 0;
+}
+
+.creator {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4A709C;
+  line-height: 21px;
+  margin: 0;
+}
+
+.video-count {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4A709C;
+  line-height: 21px;
+  margin: 0;
+}
+
+/* Completion Indicator */
+.completion-indicator {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #088738;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completion-indicator > div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #088738;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .trust-content {
+    padding: 20px 40px;
+    max-width: 100%;
+  }
+
+  .navbar {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .playlist-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .completion-indicator {
+    align-self: flex-start;
+  }
+}

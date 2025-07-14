@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Child</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="nav-left">
+        <div class="icon-box"></div>
+        <a href="index.html" class="title-text">Personification</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <div class="nav-link">Home</div>
+          <div class="nav-link">Devices</div>
+          <div class="nav-link">Family</div>
+          <div class="nav-link">Settings</div>
+        </div>
+        <img src="https://placehold.co/40x40" alt="User Avatar" class="avatar"/>
+      </div>
+    </div>
+
+    <!-- Form Wrapper -->
+    <div class="auth-wrapper">
+      <div class="auth-card">
+        <div class="auth-title">Add a Child</div>
+
+        <form id="add-child-form">
+          <div class="input-group">
+            <input class="text-input" type="text" id="firstName" name="firstName" placeholder="Enter first name" required />
+          </div>
+
+          <div class="input-group">
+            <input class="text-input" type="text" id="lastName" name="lastName" placeholder="Enter last name" required />
+          </div>
+
+          <div class="input-group">
+            <input class="text-input" type="number" id="age" name="age" placeholder="Enter age" required />
+          </div>
+
+          <div class="input-group">
+            <input class="text-input" type="date" id="dob" name="dob" required />
+          </div>
+
+          <button type="submit" class="button">Next</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/add-child.js" defer></script>
+</body>
+</html>

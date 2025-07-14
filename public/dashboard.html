@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="dashboard-wrapper">
+      
+      <!-- Header -->
+      <div class="dashboard-header">
+        <div class="header-left">
+          <div class="icon-box"></div>
+          <a href="index.html" class="title-text">Personification</a>
+        </div>
+        <div class="header-right">
+          <div class="nav-link">Home</div>
+          <div class="nav-link">Devices</div>
+          <div class="nav-link">Family</div>
+          <div class="nav-link">Settings</div>
+          <img src="https://placehold.co/40x40" alt="User Avatar" class="avatar"/>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="dashboard-main">
+        <h1 class="section-title">Dashboard</h1>
+
+        <!-- Cards Section -->
+        <div class="cards-section" id="children-container">
+          <!-- Child cards will be dynamically inserted here -->
+        </div>
+
+        <!-- Recent Activity Section -->
+        <section class="recent-activity-section">
+          <h2 class="section-subtitle">Recent Activity</h2>
+          <table class="activity-table" id="activity-table">
+          </table>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Activity Modal -->
+  <div id="activity-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Review Activity Request</h2>
+      <div id="modal-details"></div>
+      <div class="modal-buttons">
+        <button id="approve-btn" class="primary-button">Approve</button>
+        <button id="deny-btn" class="secondary-button">Deny</button>
+        <button id="close-btn" class="secondary-button">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module" src="js/dashboard.js" defer></script>
+</body>
+</html>

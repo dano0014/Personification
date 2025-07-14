@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Identity</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/selfie.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-left">
+      <div style="width: 25.5px; height: 20px; border: 2px solid black"></div>
+    </div>
+    <div class="nav-right">
+      <a href="index.html" class="title-text">Personification</a>
+    </div>
+  </div>
+
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <h2 class="auth-title">Verify your identity</h2>
+      <p class="auth-subtext">To ensure your data's safety, please upload one of the following documents and take a selfie to match.</p>
+
+      <div class="upload-section">
+        <div class="upload-row">
+          <span>Birth Certificate</span>
+          <input id="birth-certificate" type="file" accept="image/*" />
+        </div>
+        <div class="upload-row">
+          <span>Passport</span>
+          <input id="passport" type="file" accept="image/*" />
+        </div>
+        <div class="upload-row">
+          <span>ID/Drivers License</span>
+          <input id="id-drivers-license" type="file" accept="image/*" />
+        </div>
+      </div>
+
+      <div class="camera-box">
+        <h3>Take a Selfie</h3>
+        <p>Tap below to open your camera and capture your selfie</p>
+        <button id="open-camera" class="secondary-button">Open Camera</button>
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas" hidden></canvas>
+        <button id="capture" class="button" hidden>Capture</button>
+      </div>
+
+      <button id="next-button" class="button">Next</button>
+    </div>
+  </div>
+
+  <script type="module" src="./js/child-selfie.js"></script>
+</body>
+</html>

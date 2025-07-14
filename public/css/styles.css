@@ -1,0 +1,422 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #FAFAFA;
+  color: #141414;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  padding: 12px 40px;
+  background: #37E8FF;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.nav-button {
+  background: #EDEDED;
+  border-radius: 20px;
+  padding: 0 16px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  justify-content: center;
+}
+
+/* Sign-in Section */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px 160px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 960px;
+  background: white;
+  padding: 20px 16px;
+  position: relative;
+}
+
+.auth-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.input-group {
+  width: 100%;
+  max-width: 448px;
+  margin: 12px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #141414;
+}
+
+.text-input {
+  height: 56px;
+  padding: 16px;
+  background: #EDEDED;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #141414;
+}
+
+.text-input::placeholder {
+  color: #737373;
+}
+
+/* Form tag */
+.auth-card form {
+  width: 100%;
+}
+
+/* Buttons */
+.button {
+  background: black;
+  color: #FAFAFA;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  margin: 12px auto;
+  max-width: 480px;
+  width: 100%;
+}
+
+.secondary-button {
+  background: #EDEDED;
+  color: #141414;
+}
+
+/* Text Links & Footers */
+.auth-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #737373;
+  margin-top: 12px;
+}
+
+.auth-footer a {
+  color: #737373;
+  text-decoration: underline;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Container for the trust level content */
+.trust-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px 160px;
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+}
+
+/* Title section */
+.trust-content h1 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0F1417;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+/* Section titles */
+.trust-content h2 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0F1417;
+  line-height: 23px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+/* Paragraphs and descriptions */
+.trust-content p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5C738A;
+  line-height: 21px;
+  margin: 4px 0 16px;
+}
+
+.level-description {
+  font-size: 16px;
+  color: #0F1417;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Radio option wrapper */
+.level-option {
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #D4DBE3;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.level-option:hover {
+  border-color: #4F8CC4;
+}
+
+/* Radio visual */
+.radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D4DBE3;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.level-option.active .radio {
+  border-color: #4F8CC4;
+}
+
+.level-option.active .radio::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background-color: #4F8CC4;
+  border-radius: 50%;
+}
+
+/* Level label */
+.level-label {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0F1417;
+  line-height: 21px;
+}
+
+/* Confirm button */
+.primary-button {
+  background-color: #4F8CC4;
+  color: #FAFAFA;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 20px;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-end;
+}
+
+.primary-button:hover {
+  background-color: #3c6fa1;
+}
+
+/* Container for the whole trust content */
+.trust-content {
+  max-width: 960px;
+  margin: 40px auto;
+  font-family: 'Lexend', sans-serif;
+  color: #0F1417;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Current Level Card */
+.current-level-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #FAFAFA;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.level-icon {
+  width: 48px;
+  height: 48px;
+  background: #0F1417; /* default dark */
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Titles and subtitles */
+.level-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.level-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  color: #5C738A;
+  line-height: 21px;
+  margin-top: 4px;
+}
+
+/* Description paragraph */
+.level-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0F1417;
+  margin-top: -8px;
+}
+
+/* Level Option boxes */
+.level-option {
+  border: 1px solid #D4DBE3;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  transition: outline-offset 0.3s ease;
+}
+
+.level-option:hover {
+  outline: 2px solid #4F8CC4;
+  outline-offset: 2px;
+}
+
+.level-option.selected {
+  outline: 2px solid #4F8CC4;
+  outline-offset: 2px;
+  background: #E6F0FF;
+}
+
+/* Radio circle */
+.radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid #D4DBE3;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.radio.filled {
+  background-color: #4F8CC4;
+  border-color: #4F8CC4;
+}
+
+/* Level Name and Info inside each option */
+.level-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #0F1417;
+}
+
+.level-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #5C738A;
+  margin-top: 4px;
+  max-width: 860px;
+}
+
+/* Confirm button container and style */
+.confirm-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+
+.primary-button:disabled {
+  background-color: #A0AEC0;
+  cursor: not-allowed;
+}
+
+.primary-button:not(:disabled):hover {
+  background-color: #3B6A96;
+}

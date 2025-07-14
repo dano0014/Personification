@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Level 1: Guided",
+    "title": "Guided",
+    "description": "This level is designed for younger children who need more supervision. Content is highly restricted, and parental approval is required for most activities."
+  },
+  {
+    "id": 2,
+    "name": "Level 2: Independent",
+    "title": "Independent",
+    "description": "This level is suitable for children who are ready to explore more independently but may still need some guidance. They can access most content, but certain categories may be restricted."
+  },
+  {
+    "id": 3,
+    "name": "Level 3: Autonomous",
+    "title": "Autonomous",
+    "description": "This level is for older children who have demonstrated responsible online behavior. They have access to almost all content, with minimal restrictions."
+  }
+]

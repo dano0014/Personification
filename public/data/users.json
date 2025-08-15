@@ -28,7 +28,10 @@
           "YouTube",
           "Google"
         ],
-        "playlistIds": ["playlist1", "playlist2"]
+        "playlistIds": [
+          "playlist1",
+          "playlist2"
+        ]
       }
     ]
   }

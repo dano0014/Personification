@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     card.addEventListener('click', (e) => {
       if (!e.target.classList.contains('manage-button')) {
+        sessionStorage.setItem("presentChild", JSON.stringify(child));
         window.location.href = 'child-dashboard.html';
       }
     });
